@@ -145,6 +145,65 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/05/Python%E4%B8%ADfloat%E7%B2%BE%E5%BA%A6%E4%B8%8D%E5%A4%9F-decimal%E6%A8%A1%E5%9D%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="joggyGeorge">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="joggyGeorge's Homepage">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/05/Python%E4%B8%ADfloat%E7%B2%BE%E5%BA%A6%E4%B8%8D%E5%A4%9F-decimal%E6%A8%A1%E5%9D%97/" class="post-title-link" itemprop="url">Python中float精度不够--decimal模块</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-08-05 20:20:54 / Modified: 20:24:17" itemprop="dateCreated datePublished" datetime="2021-08-05T20:20:54+08:00">2021-08-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如题，碰到这个问题后csdn了一下，贴几个过程。<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39662044/article/details/76599167">问题描述</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_37989267/article/details/79473706">模块中文说明</a><br><a target="_blank" rel="noopener" href="https://docs.python.org/3/library/decimal.html">英文文档</a><br>总之就是float进度太低，小数点后5位就不行了，但本身这个修改从数值上差距不大，但不能被看出来。<br>因此就用了decimal模块，支持整数和字符串输入，不支持浮点数输入，因为浮点数本来就不准了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/04/Perl%E7%9A%84system%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -709,84 +768,10 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/Execution%20policy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="joggyGeorge">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="joggyGeorge's Homepage">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/01/Execution%20policy/" class="post-title-link" itemprop="url">Execution policy</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-08-01 18:30:00" itemprop="dateCreated datePublished" datetime="2021-08-01T18:30:00+08:00">2021-08-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这个在安装软件的时候都会碰到，防止不信任的脚本擅自修改电脑<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.1">Microsoft Doc</a><br>有几种设置：</p>
-<ul>
-<li>Restricted 最常见的，不允许</li>
-<li>AllSigned 所有都必须签名，包括自己写的</li>
-<li>Bypass 允许</li>
-<li>Default 默认，主机是Restricted，服务器是Remote-Signed</li>
-<li>Remote-Signed 下载的必须签名</li>
-<li>Undefined 未定（依赖别的权限）</li>
-<li>Unrestricted 没签名的会提示</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -852,12 +837,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">50</span>
+          <span class="site-state-item-count">51</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
