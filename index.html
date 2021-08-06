@@ -145,6 +145,65 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/07/FFmpeg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="joggyGeorge">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="joggyGeorge's Homepage">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/07/FFmpeg/" class="post-title-link" itemprop="url">FFmpeg</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-08-07 00:01:36 / Modified: 00:04:23" itemprop="dateCreated datePublished" datetime="2021-08-07T00:01:36+08:00">2021-08-07</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这是一个很大的命题了，毕竟ffmpeg是一个很大的库，功能也很好用。<br>以下是一些常见参数解释：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/yu540135101/article/details/84346146">https://blog.csdn.net/yu540135101/article/details/84346146</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/testcs_dn/article/details/43949985">https://blog.csdn.net/testcs_dn/article/details/43949985</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39516859/article/details/81843419">https://blog.csdn.net/qq_39516859/article/details/81843419</a><br><a target="_blank" rel="noopener" href="https://www.ffmpeg.org/">官网</a><br>实际上很多参数是互相冲突的，找到一组符合功能的golden options就可以做很多事情了。<br>以后再补现在一直用的options吧，现在一直不用也有些忘记了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/06/%E9%92%BB%E7%9F%B3%E6%93%8D%E4%BD%9C%E7%AC%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -692,74 +751,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/AJAX%E5%92%8CJSONP/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="joggyGeorge">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="joggyGeorge's Homepage">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/01/AJAX%E5%92%8CJSONP/" class="post-title-link" itemprop="url">AJAX和JSONP</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-08-01 18:30:00" itemprop="dateCreated datePublished" datetime="2021-08-01T18:30:00+08:00">2021-08-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>AJAX: <a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0</a><br>JSONP: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html">https://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html</a></p>
-<p>ajax是一种异步网络请求，用的是xmlhttprequest<br>jsonp用的是json脚本，功能相同</p>
-<p>ajax的缺点是不能跨域传播，可以挂代理，但是html不限制远程调用js脚本，而js支持json，可以用json表示对象属性<br>综上，使用json作为传递数据的媒介可以用于异步网络请求</p>
-<p>具体操作是将所需要的数据作为参数，外面包裹着本地已有的函数名，传回本地，也就是说外表是js脚本但实际上传递json对象数据<br>为了保证灵活性，我们可以将外部封装成可变参的方法，也就是说将所需的函数名提前传递给服务器，服务器根据传递的函数名做一次包裹</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -829,7 +820,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

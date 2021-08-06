@@ -145,6 +145,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/AJAX%E5%92%8CJSONP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="joggyGeorge">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="joggyGeorge's Homepage">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/01/AJAX%E5%92%8CJSONP/" class="post-title-link" itemprop="url">AJAX和JSONP</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-08-01 18:30:00" itemprop="dateCreated datePublished" datetime="2021-08-01T18:30:00+08:00">2021-08-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>AJAX: <a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0">https://www.liaoxuefeng.com/wiki/1022910821149312/1023022332902400#0</a><br>JSONP: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html">https://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html</a></p>
+<p>ajax是一种异步网络请求，用的是xmlhttprequest<br>jsonp用的是json脚本，功能相同</p>
+<p>ajax的缺点是不能跨域传播，可以挂代理，但是html不限制远程调用js脚本，而js支持json，可以用json表示对象属性<br>综上，使用json作为传递数据的媒介可以用于异步网络请求</p>
+<p>具体操作是将所需要的数据作为参数，外面包裹着本地已有的函数名，传回本地，也就是说外表是js脚本但实际上传递json对象数据<br>为了保证灵活性，我们可以将外部封装成可变参的方法，也就是说将所需的函数名提前传递给服务器，服务器根据传递的函数名做一次包裹</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/C#%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8Process/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -757,81 +825,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/JSON/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="joggyGeorge">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="joggyGeorge's Homepage">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/01/JSON/" class="post-title-link" itemprop="url">JSON</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-08-01 18:30:00" itemprop="dateCreated datePublished" datetime="2021-08-01T18:30:00+08:00">2021-08-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>补充一个json在线解析：<br><a target="_blank" rel="noopener" href="https://www.json.cn/">https://www.json.cn/</a></p>
-<p>json作为一个方便网络端传输的文件格式，本身还是有很多名堂在里面的<br>这次是为了在C#中使用json，所以要先用Newtonsoft.Json库，然后查了一些资料，差不多知道个大概就先用上了<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/mcgrady/archive/2013/06/08/3127781.html">https://www.cnblogs.com/mcgrady/archive/2013/06/08/3127781.html</a><br>主要是原json格式文件的样子比较奇怪，是用JArray去存储键值对的，在我看来有点歪路子，调用格式的时候不能直接deserialize，所以遇到了一些麻烦</p>
-<p>后来发现是对json的数据类型不熟悉<br>它有四种数据类型：</p>
-<ul>
-<li>JObject：最正常的对象</li>
-<li>JArray：数组类型，实际pj里用到的就是这个类型，我一直看错以为它是JObject</li>
-<li>JProperty：键值对，相当于Pair</li>
-<li>JValue：值类型，对照JProperty，相当于JProperty的一半</li>
-</ul>
-<p>JOject取属性，就像对一个class取属性一样<br>JArray取子对象，就像对一个array取其中一项一样<br>JProperty应该用的是key\value</p>
-<p>如果是比较特殊的json格式，就特殊对待<br>如果是一般的JObject格式，其实用Sererialize\Deserialize更方便，更傻瓜</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -901,7 +894,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
