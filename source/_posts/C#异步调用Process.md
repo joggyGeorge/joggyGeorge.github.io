@@ -15,3 +15,6 @@ tags: C#
 [异步全面解析](https://www.cnblogs.com/xiaoyaojian/p/4603238.html)
 [自学汇总贴](https://my.oschina.net/u/2963604/blog/1818669)
 用上面的方法重写了process.Start()，但是还是会碰到问题：gtkwave只响应一次，之后就不响应了，必须重新激活窗口才有新的反应。
+***
+最后问了学长，发现就是最简单的Start就完事了。。
+因为新开了一个独立窗口不需要后端响应所以没有关系。。
