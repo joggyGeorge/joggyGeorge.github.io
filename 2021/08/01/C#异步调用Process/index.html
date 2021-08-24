@@ -28,7 +28,7 @@
 <meta property="og:description" content="最近pj要在后端C#里调用一个外部挂载的程序，为了防止阻塞前端，去查到了异步方法异步Console Program异步静默process应用结果发现自己原来为了得到output，人为地WaitForExit，然而实际上我的gtkwave程序不需要output，所以直接把阻塞去掉应该就可以了。  后来发现还是有问题的：把客户端和新开的gtkwave放在一个线程里会导致两者互相阻塞对gtkwave的任">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-08-01T10:30:00.000Z">
-<meta property="article:modified_time" content="2021-08-04T04:49:26.575Z">
+<meta property="article:modified_time" content="2021-08-20T08:36:26.439Z">
 <meta property="article:author" content="joggyGeorge">
 <meta property="article:tag" content="C#">
 <meta name="twitter:card" content="summary">
@@ -181,7 +181,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
+                <time title="Modified: 2021-08-20 16:36:26" itemprop="dateModified" datetime="2021-08-20T16:36:26+08:00">2021-08-20</time>
               </span>
 
           
@@ -198,6 +198,8 @@
         <p>最近pj要在后端C#里调用一个外部挂载的程序，为了防止阻塞前端，去查到了异步方法<br><a target="_blank" rel="noopener" href="https://haolaoshi.blog.csdn.net/article/details/84313108?utm_medium=distribute.pc_relevant_t0.none-task-blog-OPENSEARCH-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-OPENSEARCH-1.control">异步Console Program</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wangzhichunnihao/article/details/111410953">异步静默process应用</a><br>结果发现自己原来为了得到output，人为地WaitForExit，然而实际上我的gtkwave程序不需要output，所以直接把阻塞去掉应该就可以了。</p>
 <hr>
 <p>后来发现还是有问题的：<br>把客户端和新开的gtkwave放在一个线程里会导致两者互相阻塞<br>对gtkwave的任何操作都有可能会被客户端的refresh cycle阻塞而不响应<br>所以去补了以下异步的知识<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xiaoyaojian/p/4603238.html">异步全面解析</a><br><a target="_blank" rel="noopener" href="https://my.oschina.net/u/2963604/blog/1818669">自学汇总贴</a><br>用上面的方法重写了process.Start()，但是还是会碰到问题：gtkwave只响应一次，之后就不响应了，必须重新激活窗口才有新的反应。</p>
+<hr>
+<p>最后问了学长，发现就是最简单的Start就完事了。。<br>因为新开了一个独立窗口不需要后端响应所以没有关系。。</p>
 
     </div>
 
@@ -294,7 +296,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-count">55</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
