@@ -145,6 +145,71 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/CSS%E5%B1%82%E7%BA%A7%E5%B1%8F%E8%94%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="joggyGeorge">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="joggyGeorge's Homepage">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/01/CSS%E5%B1%82%E7%BA%A7%E5%B1%8F%E8%94%BD/" class="post-title-link" itemprop="url">CSS层级屏蔽</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-08-01 18:30:00" itemprop="dateCreated datePublished" datetime="2021-08-01T18:30:00+08:00">2021-08-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>有一点很坑。。不说的话会被浪费很多时间。<br>CSS是有层级的，对同一组件进行渲染的时候，是会覆盖的，而且有优先级。<br>优先级：外部文件&lt;内部文件&lt;直接渲染<br>写了俩文件分别渲染组件的不同属性，会互相覆盖。<br>被坑到就知道了。。。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/CSS-Transition/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -753,84 +818,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/01/Markdown%E8%AF%AD%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="joggyGeorge">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="joggyGeorge's Homepage">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/01/Markdown%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">Markdown语法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-08-01 18:30:00" itemprop="dateCreated datePublished" datetime="2021-08-01T18:30:00+08:00">2021-08-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-08-04 12:49:26" itemprop="dateModified" datetime="2021-08-04T12:49:26+08:00">2021-08-04</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>自己列的，助记，最麻烦的是会自动转换。。</p>
-<h2 id="和-标记标题-标记标题"><a href="#和-标记标题-标记标题" class="headerlink" title="=和-标记标题#标记标题"></a>=和-标记标题#标记标题</h2><p>两个空格加回车换行<br>两个回车换段<br>一个回车不换行</p>
-<hr>
-<h2 id="一个斜体两个粗体三个-粗斜体"><a href="#一个斜体两个粗体三个-粗斜体" class="headerlink" title="一个斜体两个粗体三个*粗斜体"></a>一个<em>斜体两个</em>粗体三个*粗斜体</h2><p>两个~删除线下划线<br>[^脚注]<br>[^脚注]: fjkd</p>
-<hr>
-<p>+-*无序列表<br>1.有序列表<br>四个空格嵌套列表</p>
-<hr>
-<p>一个&gt;区块引用<br><code>函数 tab代码区块 三个</code>代码</p>
-<hr>
-<p>[链接名]+(链接地址)<br>&lt;链接地址&gt;<br>变量同脚注，先标明最后[xx]: 赋值</p>
-<hr>
-<h2 id="文字-地址-是图片"><a href="#文字-地址-是图片" class="headerlink" title="!+[文字]+(地址)是图片"></a>!+[文字]+(地址)是图片</h2><p>|表格-分割表头<br>-:右对齐:-左对齐:-:居中</p>
-<hr>
-<p>$$latex</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -900,7 +887,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">57</span>
+          <span class="site-state-item-count">58</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
